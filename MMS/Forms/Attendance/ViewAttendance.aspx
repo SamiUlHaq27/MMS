@@ -1,0 +1,31 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Generics/Student.Master" AutoEventWireup="true" CodeBehind="ViewAttendance.aspx.cs" Inherits="MMS.Forms.Attendance.ViewAttendance" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="StyleAttendance.css" rel="stylesheet" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="content">
+        <div class="controls">
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>January</asp:ListItem>
+                <asp:ListItem Selected="True">February</asp:ListItem>
+                <asp:ListItem>March</asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="data">
+            <asp:Table ID="Table1" runat="server" BackColor="White" CellPadding="5" CellSpacing="5">
+                <asp:TableRow runat="server" TableSection="TableHeader">
+                    <asp:TableCell runat="server">Date</asp:TableCell>
+                    <asp:TableCell runat="server">Morning</asp:TableCell>
+                    <asp:TableCell runat="server">Evening</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">12-06-2024</asp:TableCell>
+                    <asp:TableCell runat="server">180</asp:TableCell>
+                    <asp:TableCell runat="server">160</asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </div>
+    </div>
+</asp:Content>

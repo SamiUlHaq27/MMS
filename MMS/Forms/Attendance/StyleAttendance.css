@@ -1,0 +1,37 @@
+﻿/*---------------------------------- View Attendance Student ------------------------------*/
+.content .controls {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.controls select, .date-picker, .search-bar {
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.content .data {
+    padding: 20px;
+    display: flex;
+    justify-content: center
+}
+
+.data table {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+    .data table thead {
+        background-color: blue;
+        text-align: center;
+        color: white;
+    }
+
+#RadioButtonList1 {
+    color: white;
+    font-weight: bold;
+}
