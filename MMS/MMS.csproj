@@ -103,7 +103,6 @@
     <Content Include="Forms\Attendance\MarkAttendance.aspx" />
     <Content Include="Forms\Attendance\ViewAttendance.aspx" />
     <Content Include="Forms\Feedback\GiveFeedback.aspx" />
-    <Content Include="Forms\Feedback\StyleFeedback.css" />
     <Content Include="Forms\Feedback\ViewFeedbacks.aspx" />
     <Content Include="Forms\CSS\MainStyle.css" />
     <Content Include="Forms\Images\check.png" />
@@ -112,6 +111,8 @@
     <Content Include="Forms\Images\payment.png" />
     <Content Include="Forms\Images\settings.png" />
     <Content Include="Forms\Images\restaurant.png" />
+    <Content Include="Forms\Payment\PaymentRecords.aspx" />
+    <Content Include="Forms\Payment\StudentBill.aspx" />
     <Content Include="Global.asax" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -159,6 +160,20 @@
     </Compile>
     <Compile Include="Forms\Generics\Student.Master.designer.cs">
       <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payment\PaymentRecords.aspx.cs">
+      <DependentUpon>PaymentRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Payment\PaymentRecords.aspx.designer.cs">
+      <DependentUpon>PaymentRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payment\StudentBill.aspx.cs">
+      <DependentUpon>StudentBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Payment\StudentBill.aspx.designer.cs">
+      <DependentUpon>StudentBill.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
