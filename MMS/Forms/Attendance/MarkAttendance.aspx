@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Generics/Staff.Master" AutoEventWireup="true" CodeBehind="MarkAttendance.aspx.cs" Inherits="MMS.Forms.Attendance.MarkAttendance" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="StyleAttendance.css" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -15,7 +14,7 @@
             <asp:TextBox ID="TextBox2" CssClass="search-bar" runat="server">Search here..</asp:TextBox>
         </div>
         <div class="data">
-            <asp:Table ID="Table1" runat="server" BackColor="White" CellPadding="5" CellSpacing="5">
+            <asp:Table ID="Table1" runat="server" CellPadding="5" CellSpacing="5">
                 <asp:TableRow runat="server" TableSection="TableHeader">
                     <asp:TableCell runat="server">Roll No</asp:TableCell>
                     <asp:TableCell runat="server">Name</asp:TableCell>

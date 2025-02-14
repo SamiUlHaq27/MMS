@@ -101,9 +101,11 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Forms\Attendance\MarkAttendance.aspx" />
-    <Content Include="Forms\Attendance\StyleAttendance.css" />
     <Content Include="Forms\Attendance\ViewAttendance.aspx" />
-    <Content Include="Forms\Generics\StyleHeaderFooter.css" />
+    <Content Include="Forms\Feedback\GiveFeedback.aspx" />
+    <Content Include="Forms\Feedback\StyleFeedback.css" />
+    <Content Include="Forms\Feedback\ViewFeedbacks.aspx" />
+    <Content Include="Forms\CSS\MainStyle.css" />
     <Content Include="Forms\Images\check.png" />
     <Content Include="Forms\Images\feedback.png" />
     <Content Include="Forms\Images\food.png" />
@@ -129,6 +131,20 @@
     </Compile>
     <Compile Include="Forms\Attendance\ViewAttendance.aspx.designer.cs">
       <DependentUpon>ViewAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Feedback\GiveFeedback.aspx.cs">
+      <DependentUpon>GiveFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Feedback\GiveFeedback.aspx.designer.cs">
+      <DependentUpon>GiveFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Feedback\ViewFeedbacks.aspx.cs">
+      <DependentUpon>ViewFeedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Feedback\ViewFeedbacks.aspx.designer.cs">
+      <DependentUpon>ViewFeedbacks.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Generics\Staff.Master.cs">
       <DependentUpon>Staff.Master</DependentUpon>
