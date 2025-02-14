@@ -3,30 +3,36 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="payment-records">
-        <div class="container">
-            <h3><i class="fas fa-user-graduate icon"></i> Student Attendance Records</h3>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem>January</asp:ListItem>
+            <asp:ListItem>February</asp:ListItem>
+            <asp:ListItem>March</asp:ListItem>
+            <asp:ListItem>April</asp:ListItem>
+            <asp:ListItem>May</asp:ListItem>
+            <asp:ListItem>June</asp:ListItem>
+            <asp:ListItem>july</asp:ListItem>
+        </asp:DropDownList>
 
-            <!-- SEARCH BAR -->
-            <div class="search-bar">
-                <asp:TextBox ID="datePicker" runat="server" TextMode="Date"></asp:TextBox>
-                <div class="checkbox-group">
-                    <asp:RadioButton ID="morning" runat="server" GroupName="session" Text="Morning" />
-                    <asp:RadioButton ID="evening" runat="server" GroupName="session" Text="Evening" />
-                </div>
-                <asp:TextBox ID="searchBox" runat="server" placeholder="Enter Roll No or Name" ></asp:TextBox>
-                <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn"  />
-            </div>
 
-            <!-- STUDENT DATA GRID -->
-            <asp:GridView ID="studentGrid" runat="server" AutoGenerateColumns="False" BorderWidth="1" CellPadding="5" CssClass="grid">
-                <Columns>
-                    <asp:BoundField DataField="RollNo" HeaderText="Roll No" />
-                    <asp:BoundField DataField="Name" HeaderText="Name" />
-                    <asp:BoundField DataField="MealsTaken" HeaderText="Meals Taken" />
-                    <asp:BoundField DataField="PaidAmount" HeaderText="Paid Amount" />
-                    <asp:BoundField DataField="PendingDues" HeaderText="Pending Dues" />
-                </Columns>
-            </asp:GridView>
-        </div>
+         <div class="data">
+     <asp:Table ID="Table1" runat="server" BackColor="White" CellPadding="5" CellSpacing="5">
+         <asp:TableRow runat="server" TableSection="TableHeader">
+             <asp:TableCell runat="server">StudentID</asp:TableCell>
+             <asp:TableCell runat="server">Total Meals</asp:TableCell>
+             <asp:TableCell runat="server">Total Bill</asp:TableCell>
+             <asp:TableCell runat="server">Status</asp:TableCell>
+         </asp:TableRow>
+         <asp:TableRow runat="server">
+             <asp:TableCell runat="server">12-06-2024</asp:TableCell>
+             <asp:TableCell runat="server">180</asp:TableCell>
+             <asp:TableCell runat="server">160</asp:TableCell>
+             <asp:TableCell runat="server">
+             <asp:CheckBox ID="CheckBox1" runat="server" /></asp:TableCell>
+         </asp:TableRow>
+     </asp:Table>
+ </div>
+        
+
+           
     </div>
 </asp:Content>
