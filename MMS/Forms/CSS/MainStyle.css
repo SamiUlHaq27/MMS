@@ -176,7 +176,7 @@ table thead {
     width: 40%;
     justify-content: center;
     margin: auto;
-    background-color: var(--primary-color);
+    background-color: #3d3c3ce0;
     border-radius: 20px;
     row-gap: 10px;
 }
@@ -224,7 +224,7 @@ input, select, button{
     margin: auto;
     width: 40%;
     padding: 20px;
-    background-color: var(--primary-color);
+    background-color: #3d3c3ce0;
     border-radius: 20px;
 }
 .table-container .heading {

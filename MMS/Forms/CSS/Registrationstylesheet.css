@@ -20,6 +20,9 @@
     font-size: large;
     color: var(--secondary-color);
     padding: 15px;
+    animation: login 1.5s ease-out forwards;
+    position: relative;
+    top: -50px;
 }
 
     .login h1 {
@@ -82,6 +85,9 @@ form {
     padding: 15px;
     border-radius: 20px;
     row-gap: 10px;
+    animation: login 1.5s ease-out forwards;
+    position: relative;
+    top: -50px;
 }
 
     .login2 h1 {
@@ -132,3 +138,14 @@ form1 {
     text-decoration: underline;
 }
 
+@keyframes login {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
