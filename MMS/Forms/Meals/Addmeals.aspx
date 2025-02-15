@@ -2,6 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
       <link href="../CSS/Mealsstylesheet.css" rel="stylesheet" />
+        <style>
+            body{
+                background: url("../Images/chef.jpg");
+                background-size: cover;
+            }
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> <section>
      <div class="controlsmeal">

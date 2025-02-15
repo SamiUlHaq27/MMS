@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Generics/Staff.Master" AutoEventWireup="true" CodeBehind="ViewFeedbacks.aspx.cs" Inherits="MMS.Forms.Feedback.ViewFeedbacks" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
- 
+    <style>
+        body{
+            background: url("../Images/healthy_food.jpg");
+            background-size: cover;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="content">

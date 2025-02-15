@@ -21,9 +21,7 @@
             
             <asp:HyperLink ID="HyperLink1" runat="server" CssClass="logo-text">Mess Attendance</asp:HyperLink>
         </div>
-        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Forms/Images/settings.png" Height="31px" Width="31px" />
-    </div>
-    <div class="navigation">
+        <div class="navigation">
         <ul>
             <li class="nav-item nav-active">
                 <asp:Image ID="Image2" runat="server" Height="26px" ImageUrl="~/Forms/Images/food.png" Width="26px" />
@@ -43,6 +41,7 @@
             </li>
         </ul>
     </div>
+    </div>
 </header>
 
         <div>
@@ -60,10 +59,14 @@
           </div>
           <div class="footer-pages">
               <ul>
-                  <li><asp:HyperLink ID="HyperLink7" runat="server">Menu</asp:HyperLink></li>
-                  <li><asp:HyperLink ID="HyperLink8" runat="server">Attendance</asp:HyperLink></li>
-                  <li><asp:HyperLink ID="HyperLink9" runat="server">Bills</asp:HyperLink></li>
-                  <li><asp:HyperLink ID="HyperLink10" runat="server">Feedback</asp:HyperLink></li>
+                  <li>
+                      <asp:Image ID="Image7" runat="server" ImageUrl="~/Forms/Images/restaurant-menu2.png" /><asp:HyperLink ID="HyperLink7" runat="server">Menu</asp:HyperLink></li>
+                  <li>
+                      <asp:Image ID="Image8" runat="server" ImageUrl="~/Forms/Images/attendance2.png" /><asp:HyperLink ID="HyperLink8" runat="server">Attendance</asp:HyperLink></li>
+                  <li>
+                      <asp:Image ID="Image9" runat="server" ImageUrl="~/Forms/Images/bills2.png" /><asp:HyperLink ID="HyperLink9" runat="server">Bills</asp:HyperLink></li>
+                  <li>
+                      <asp:Image ID="Image10" runat="server" ImageUrl="~/Forms/Images/feedback2.png" /><asp:HyperLink ID="HyperLink10" runat="server">Feedback</asp:HyperLink></li>
               </ul>
           </div>
       </div>

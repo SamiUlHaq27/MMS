@@ -1,7 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/Generics/Student.Master" AutoEventWireup="true" CodeBehind="GiveFeedback.aspx.cs" Inherits="MMS.Forms.Feedback.GiveFeedback" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="StyleFeedback.css" rel="stylesheet" />
+    <style>
+        body{
+            background: url("../Images/healthy_food.jpg");
+            background-size: cover;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="give-feedback my-form">

@@ -51,15 +51,6 @@ namespace MMS.Forms.Generics
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
 
         /// <summary>
-        /// ImageButton2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
-
-        /// <summary>
         /// Image2 control.
         /// </summary>
         /// <remarks>
@@ -159,6 +150,15 @@ namespace MMS.Forms.Generics
         protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
 
         /// <summary>
+        /// Image7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image7;
+
+        /// <summary>
         /// HyperLink7 control.
         /// </summary>
         /// <remarks>
@@ -166,6 +166,15 @@ namespace MMS.Forms.Generics
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
+
+        /// <summary>
+        /// Image8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image8;
 
         /// <summary>
         /// HyperLink8 control.
@@ -177,6 +186,15 @@ namespace MMS.Forms.Generics
         protected global::System.Web.UI.WebControls.HyperLink HyperLink8;
 
         /// <summary>
+        /// Image9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image9;
+
+        /// <summary>
         /// HyperLink9 control.
         /// </summary>
         /// <remarks>
@@ -184,6 +202,15 @@ namespace MMS.Forms.Generics
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink9;
+
+        /// <summary>
+        /// Image10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image10;
 
         /// <summary>
         /// HyperLink10 control.

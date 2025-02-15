@@ -1,6 +1,7 @@
 ﻿:root {
     --primary-color: #3d3c3c;
     --secondary-color: white;
+    --hf-color: #13131294;
 }
 
 /* ------------------------ Header --------------------------- */
@@ -16,7 +17,7 @@ a{
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--hf-color);
     padding: 10px;
     border-radius: 10px 10px 30px 30px;
     margin: 10px;
@@ -25,7 +26,6 @@ header {
 .title-bar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
     img{
         vertical-align: middle;
        }
@@ -36,10 +36,6 @@ header {
     font-size: x-large;
 }
 
-.navigation {
-    padding-bottom: 20px;
-}
-
 .navigation ul{
     list-style: none;
 }
@@ -48,7 +44,7 @@ header {
     color: var(--secondary-color);
     padding: 10px;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-right: 20px;
     display: inline;
     img {
         vertical-align: middle;
@@ -64,7 +60,7 @@ header {
 }
 /* ------------------------ Footer --------------------------- */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--hf-color);
     padding: 10px;
     border-radius: 30px 30px 10px 10px;
     color: var(--secondary-color);
@@ -90,6 +86,12 @@ footer {
 
 .footer-pages li {
     padding: 5px;
+    align-items: center;
+    display: flex;
+    column-gap: 10px;
+    img{
+           width: 30px;
+       }
 }
 
 .footer-content li:hover {

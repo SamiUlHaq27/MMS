@@ -6,6 +6,12 @@
 <head runat="server">
     <title></title>
     <link href="../CSS/Registrationstylesheet.css" rel="stylesheet" />
+    <style>
+        body{
+            background: url("../Images/food-truck.jpg");
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
