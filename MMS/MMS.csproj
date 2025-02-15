@@ -101,8 +101,6 @@
     <Content Include="Forms\Attendance\ViewAttendance.aspx" />
     <Content Include="Forms\CSS\Mealsstylesheet.css" />
     <Content Include="Forms\CSS\Registrationstylesheet.css" />
-    <Content Include="Forms\CSS\viewmealsadminstylesheet.css" />
-    <Content Include="Forms\CSS\viewmealsstudentstylesheet.css" />
     <Content Include="Forms\Feedback\GiveFeedback.aspx" />
     <Content Include="Forms\Feedback\ViewFeedbacks.aspx" />
     <Content Include="Forms\CSS\MainStyle.css" />

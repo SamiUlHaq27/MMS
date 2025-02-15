@@ -3,8 +3,9 @@
  
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="feedbacks">
-        <asp:Table ID="Table1" runat="server">
+    <div class="content">
+        <div class="data">
+            <asp:Table ID="Table1" runat="server">
             <asp:TableRow runat="server" TableSection="TableHeader">
                 <asp:TableCell runat="server">Meal</asp:TableCell>
                 <asp:TableCell runat="server">Message</asp:TableCell>
@@ -18,5 +19,7 @@
                 <asp:TableCell runat="server">haider</asp:TableCell>
             </asp:TableRow>
         </asp:Table>
+
+        </div>
     </div>
 </asp:Content>

@@ -1,13 +1,22 @@
-﻿/* ------------------------ Header --------------------------- */
+﻿:root {
+    --primary-color: #3d3c3c;
+    --secondary-color: white;
+}
+
+/* ------------------------ Header --------------------------- */
 body {
-    background-color: rgb(207, 221, 255);
+    background-color: lightgrey;
     height: 100vh;
     margin: 0px;
     font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 }
 
+a{
+    color: var(--secondary-color);
+}
+
 header {
-    background-color: blue;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 10px 10px 30px 30px;
     margin: 10px;
@@ -23,7 +32,7 @@ header {
 }
 
 .logo-text {
-    color: white;
+    color: var(--secondary-color);
     font-size: x-large;
 }
 
@@ -36,7 +45,7 @@ header {
 }
 
 .nav-item {
-    color: white;
+    color: var(--secondary-color);
     padding: 10px;
     border-radius: 20px;
     margin-left: 20px;
@@ -47,7 +56,7 @@ header {
 }
 
 .nav-active {
-    border: 1px solid white;
+    border: 1px solid var(--secondary-color);
 }
 
 .nav-item:hover {
@@ -55,10 +64,10 @@ header {
 }
 /* ------------------------ Footer --------------------------- */
 footer {
-    background-color: blue;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 30px 30px 10px 10px;
-    color: white;
+    color: var(--secondary-color);
     margin: 10px;
     width: calc(100% - 20px);
     box-sizing: border-box;
@@ -89,7 +98,7 @@ footer {
 
 .copyright-text {
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid var(--secondary-color);
     padding: 5px;
     border-radius: 0px 0px 10px 10px;
 }
@@ -101,12 +110,27 @@ footer {
 }
 
 .controls select, .date-picker, .search-bar {
-    color: white;
+    color: var(--secondary-color);
     font-weight: bold;
-    background-color: blue;
-    border: 1px solid white;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
     padding: 5px;
     border-radius: 5px;
+}
+
+.controls table{
+    margin: 0px 20px 0px 20px;
+}
+
+.controls input[type="text"], input[type="date"]{
+    width: 150px;
+}
+
+.controls button{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color)
 }
 
 .content .data {
@@ -116,19 +140,25 @@ footer {
 }
 
 table {
-    border: 2px solid white;
+    border: 2px solid var(--secondary-color);
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 table thead {
-    background-color: blue;
+    background-color: var(--primary-color);
     text-align: center;
-    color: white;
+    color: var(--secondary-color);
 }
 
+    table td {
+        padding: 5px;
+        border-left: 1px solid var(--primary-color);
+        border-right: 1px solid var(--primary-color);
+    }
+
 #RadioButtonList1 {
-    color: white;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 /* ---------------------------------- View Feedabacks ------------------------------------- */
@@ -144,7 +174,7 @@ table thead {
     width: 40%;
     justify-content: center;
     margin: auto;
-    background-color: blue;
+    background-color: var(--primary-color);
     border-radius: 20px;
     row-gap: 10px;
 }
@@ -157,7 +187,7 @@ input, select, button{
 /* ---------------------------------- Give Feedback ---------------------------------------- */
 
 .give-feedback h1{
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
 }
 
@@ -172,38 +202,38 @@ input, select, button{
     min-width: 100px;
 }
 
-.rattings button{
+.rattings button {
     height: 30px;
     width: 30px;
     border-radius: 10px;
     background-color: none;
     border: none;
-    border: 1px solid blue;
+    border: 1px solid var(--primary-color);
 }
 
-.rattings button:hover{
-    background-color: blue;
-    border: 1px solid white;
-    color: white;
-}
+    .rattings button:hover {
+        background-color: var(--primary-color);
+        border: 1px solid var(--secondary-color);
+        color: var(--secondary-color);
+    }
 
 /* ---------------------------------- Student Bill ---------------------------------------- */
-.student-bill{
-    margin:auto;
-    width:40%;
-    padding:20px;
-    background-color:blue;
-    border-radius:20px;
+.student-bill {
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
 }
 .table-container .heading {
     width: 50%;
     font-size: larger;
-    color: white;
+    color: var(--secondary-color);
     font-weight: bold;
     padding-left:5px;
 }
 .table-container .value{
-    background-color:white;
+    background-color:var(--secondary-color);
     width:50%;
     font-size:large;
     padding:5px;
@@ -213,7 +243,7 @@ input, select, button{
     justify-content:space-between;
    
     margin:10px;
-    border:1px solid white;
+    border:1px solid var(--secondary-color);
     
 }
 .search-container{

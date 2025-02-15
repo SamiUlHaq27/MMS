@@ -27,19 +27,19 @@
         <ul>
             <li class="nav-item nav-active">
                 <asp:Image ID="Image2" runat="server" Height="26px" ImageUrl="~/Forms/Images/food.png" Width="26px" />
-                <asp:HyperLink ID="HyperLink2" runat="server">Menu</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Forms/Meals/Viewmealsadmin.aspx">Menu</asp:HyperLink>
             </li>
             <li class="nav-item">
                 <asp:Image ID="Image3" runat="server" Height="26px" ImageUrl="~/Forms/Images/check.png" Width="26px" />
-                <asp:HyperLink ID="HyperLink11" runat="server">Attendance</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Forms/Attendance/MarkAttendance.aspx">Attendance</asp:HyperLink>
             </li>
             <li class="nav-item">
                 <asp:Image ID="Image4" runat="server" Height="26px" ImageUrl="~/Forms/Images/payment.png" Width="26px" />
-                <asp:HyperLink ID="HyperLink12" runat="server">Bill</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/Forms/Payment/PaymentRecords.aspx">Bill</asp:HyperLink>
             </li>
             <li class="nav-item">
                 <asp:Image ID="Image5" runat="server" Height="26px" ImageUrl="~/Forms/Images/feedback.png" Width="26px" />
-                <asp:HyperLink ID="HyperLink13" runat="server">Feedback</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/Forms/Feedback/ViewFeedbacks.aspx">Feedback</asp:HyperLink>
             </li>
         </ul>
     </div>

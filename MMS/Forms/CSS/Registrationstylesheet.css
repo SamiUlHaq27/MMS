@@ -1,9 +1,14 @@
-﻿.log {
-    color: white;
+﻿:root {
+    --primary-color: #3d3c3c;
+    --secondary-color: white;
+}
+
+.log {
+    color: var(--secondary-color);
 }
 
 .login {
-    background-color: blue;
+    background-color: var(--primary-color);
     border: double;
     width: 25%;
    row-gap:10px;
@@ -13,7 +18,7 @@
     text-align: left;
     margin: auto;
     font-size: large;
-    color: white;
+    color: var(--secondary-color);
     padding: 15px;
 }
 
@@ -28,7 +33,7 @@
     }
 
         .login input:focus-visible {
-            outline-color: blue;
+            outline-color: var(--primary-color);
         }
 
 .button {
@@ -40,13 +45,13 @@
         font-size: large;
         padding: 5px;
         font-weight: bolder;
-        border: 1px solid blue;
+        border: 1px solid var(--primary-color);
     }
 
         .button input:hover {
             background-color: transparent;
-            color: white;
-            border: 1px solid white;
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
         }
 
 form {
@@ -55,7 +60,7 @@ form {
 }
 
 .login a {
-    color: white;
+    color: var(--secondary-color);
     text-align: right;
     text-decoration: none;
 }
@@ -65,7 +70,7 @@ form {
     }
 
 .login2 {
-    background-color: blue;
+    background-color: var(--primary-color);
     border: double;
     width: 30%;
     display: flex;
@@ -73,7 +78,7 @@ form {
     text-align: left;
     margin: auto;
     font-size: large;
-    color: white;
+    color: var(--secondary-color);
     padding: 15px;
     border-radius: 20px;
     row-gap:10px;
@@ -90,20 +95,20 @@ form {
     }
 
         .login2 input:focus-visible {
-            outline-color: blue;
+            outline-color: var(--primary-color);
         }
 
 .button2 input {
     font-size: large;
     padding: 8px;
     font-weight: bolder;
-    border: 1px solid blue;
+    border: 1px solid var(--primary-color);
 }
 
     .button2 input:hover {
         background-color: transparent;
-        color: white;
-        border: 1px solid white;
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
     }
 
 .button2 {
@@ -112,7 +117,7 @@ form {
 }
 
 .login2 a {
-    color: white;
+    color: var(--secondary-color);
     text-align: right;
     text-decoration: none;
     margin-top: 50px;

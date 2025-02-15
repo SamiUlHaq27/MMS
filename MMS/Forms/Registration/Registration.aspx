@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
                 <div class="login2">
 
-            <h1>Register</h1><br />
+            <h1>Register</h1>
              
 
             <asp:Label ID="Label3" runat="server" Text="Name"></asp:Label>
@@ -28,7 +28,7 @@
 
             <asp:Label ID="Label6" runat="server" Text="Confirm Password"></asp:Label>
 
-            <input id="Password1" type="password" />
+            <input id="Password2" type="password" />
 
             <div class="button2">
             <asp:Button ID="Button2" runat="server" Text="Register" />
