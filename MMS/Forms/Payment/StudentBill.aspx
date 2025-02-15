@@ -3,8 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="student-bill">
-        <div class="container">
-            <h2><i class="fa-solid fa-user-graduate"></i>Student Bill Status</h2>
+       
+          
 
             <!-- Search Section -->
             <div class="search-container">
@@ -14,51 +14,26 @@
                     <asp:ListItem Text="March" Value="March"></asp:ListItem>
                     <asp:ListItem Text="April" Value="April"></asp:ListItem>
                 </asp:DropDownList>
-                <asp:RadioButton ID="rbMorning" runat="server" GroupName="Shift" Text="Morning"  />
-                <asp:RadioButton ID="rbEvening" runat="server" GroupName="Shift" Text="Evening" />
-                <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="search-btn"  />
+                
             </div>
 
             <!-- Student Bill Table -->
             <div class="table-container">
-                <table>
-                    <tr>
-                        <th><i class="fa-solid fa-id-card"></i>Student ID</th>
-                        <td>
-                            <asp:Label ID="lblStudentID" runat="server" /></td>
-                    </tr>
-                    <tr>
-                        <th><i class="fa-solid fa-user"></i>Name</th>
-                        <td>
-                            <asp:Label ID="lblName" runat="server" /></td>
-                    </tr>
-                    <tr>
-                        <th><i class="fa-solid fa-utensils"></i>Total Meals Taken</th>
-                        <td>
-                            <asp:Label ID="lblMealsTaken" runat="server" /></td>
-                    </tr>
-                    <tr>
-                        <th><i class="fa-solid fa-wallet"></i>Total Bill</th>
-                        <td>
-                            <asp:Label ID="lblTotalBill" runat="server" /></td>
-                    </tr>
-                    <tr>
-                        <th><i class="fa-solid fa-money-bill-wave"></i>Amount Paid</th>
-                        <td>
-                            <asp:Label ID="lblPaidAmount" runat="server" /></td>
-                    </tr>
-                    <tr>
-                        <th><i class="fa-solid fa-hand-holding-usd"></i>Pending Dues</th>
-                        <td>
-                            <asp:Label ID="lblPendingDues" runat="server" /></td>
-                    </tr>
-                    <tr>
-                        <th><i class="fa-solid fa-circle-check"></i>Status</th>
-                        <td>
-                            <asp:Label ID="lblStatus" runat="server" CssClass="status" /></td>
-                    </tr>
-                </table>
+                <div class="data">
+                    <asp:Label ID="Label1" runat="server" Text="TotalMeals" CssClass="heading"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="30" CssClass="value"></asp:Label>
+                </div>
+
+                <div class="data">
+                    <asp:Label ID="Label3" runat="server" Text="Total bill" CssClass="heading"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="5000" CssClass="value"></asp:Label>
+                </div>
+
+                <div class="data">
+                    <asp:Label ID="Label5" runat="server" Text="Status" CssClass="heading"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Text="Unpaid" CssClass="value"></asp:Label>
+                </div>
             </div>
         </div>
-    </div>
+    
 </asp:Content>

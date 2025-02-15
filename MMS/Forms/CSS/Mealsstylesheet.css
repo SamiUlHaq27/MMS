@@ -1,0 +1,71 @@
+﻿body {
+    margin: 0px;
+}
+
+.controlsmeal {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 30px;
+    margin: auto;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    /*   align-items:center;*/
+}
+
+    .controlsmeal input {
+        /*    border: 2px solid black;*/
+        margin: 3px;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+        height: 20px;
+        font-size: large;
+    }
+
+        .controlsmeal input:focus-visible {
+            outline-color: blue;
+        }
+
+.submit {
+    margin: auto;
+    color: blue;
+    font-weight: bold;
+    padding: 10px;
+    input
+
+{
+    font-size: large;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid blue;
+}
+
+input:hover {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+}
+
+}
+
+.controlsmeal tr {
+    display: inline;
+}
+
+.controlsmeal tbody {
+    display: flex;
+}
+
+.drop {
+    font-size: large;
+    border-radius: 5px;
+    padding: 5px;
+}
+.controlsmeal table{
+    background-color:blue;
+}

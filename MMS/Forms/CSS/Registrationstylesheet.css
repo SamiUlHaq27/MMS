@@ -1,0 +1,129 @@
+﻿.log {
+    color: white;
+}
+
+.login {
+    background-color: blue;
+    border: double;
+    width: 25%;
+   row-gap:10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    font-size: large;
+    color: white;
+    padding: 15px;
+}
+
+    .login h1 {
+        text-align: center;
+    }
+
+    .login input {
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+    }
+
+        .login input:focus-visible {
+            outline-color: blue;
+        }
+
+.button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+    .button input {
+        font-size: large;
+        padding: 5px;
+        font-weight: bolder;
+        border: 1px solid blue;
+    }
+
+        .button input:hover {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+form {
+    height: 99vh;
+    display: flex;
+}
+
+.login a {
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+
+    .login a:hover {
+        text-decoration: underline;
+    }
+
+.login2 {
+    background-color: blue;
+    border: double;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    font-size: large;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    row-gap:10px;
+}
+
+    .login2 h1 {
+        text-align: center;
+    }
+
+    .login2 input {
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+    }
+
+        .login2 input:focus-visible {
+            outline-color: blue;
+        }
+
+.button2 input {
+    font-size: large;
+    padding: 8px;
+    font-weight: bolder;
+    border: 1px solid blue;
+}
+
+    .button2 input:hover {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+
+.button2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login2 a {
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+form1 {
+    height: 99vh;
+    display: flex;
+}
+
+.login2 a:hover {
+    text-decoration: underline;
+}
+
