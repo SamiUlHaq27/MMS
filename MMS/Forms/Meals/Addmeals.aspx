@@ -7,6 +7,10 @@
             background: url("../Images/chef.jpg");
             background-size: cover;
         }
+                .menu-link{
+            
+    border: 1px solid var(--secondary-color);
+}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

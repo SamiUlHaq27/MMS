@@ -6,6 +6,11 @@
             background: url("../Images/italian_food.jpg");
             background-size: cover;
         }
+        .attendence-link{
+            
+    border: 1px solid var(--secondary-color);
+}
+        
     </style>
 </asp:Content>
 
@@ -31,6 +36,16 @@
                     <asp:TableCell runat="server">Haider</asp:TableCell>
                     <asp:TableCell runat="server"><asp:CheckBox ID="CheckBox1" runat="server" /></asp:TableCell>
                 </asp:TableRow>
+                 <asp:TableRow runat="server">
+     <asp:TableCell runat="server">22011598-088</asp:TableCell>
+     <asp:TableCell runat="server">Sufyan Ahmad</asp:TableCell>
+     <asp:TableCell runat="server"><asp:CheckBox ID="CheckBox2" runat="server" /></asp:TableCell>
+ </asp:TableRow>
+                 <asp:TableRow runat="server">
+     <asp:TableCell runat="server">22011598-071</asp:TableCell>
+     <asp:TableCell runat="server">Irtaza</asp:TableCell>
+     <asp:TableCell runat="server"><asp:CheckBox ID="CheckBox3" runat="server" /></asp:TableCell>
+ </asp:TableRow>
             </asp:Table>
         </div>
     </div>

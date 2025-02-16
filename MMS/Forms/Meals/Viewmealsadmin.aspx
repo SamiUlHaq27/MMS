@@ -5,6 +5,10 @@
             background: url("../Images/fast_food.jpg");
             background-size: cover;
         }
+                .menu-link{
+            
+    border: 1px solid var(--secondary-color);
+}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -29,6 +33,18 @@
                     <asp:TableCell runat="server">Morning</asp:TableCell>
                     <asp:TableCell runat="server">250</asp:TableCell>
                 </asp:TableRow>
+                <asp:TableRow runat="server">
+    <asp:TableCell runat="server">Mutton</asp:TableCell>
+    <asp:TableCell runat="server">Friday</asp:TableCell>
+    <asp:TableCell runat="server">Morning</asp:TableCell>
+    <asp:TableCell runat="server">500</asp:TableCell>
+</asp:TableRow>
+                <asp:TableRow runat="server">
+    <asp:TableCell runat="server">Beef</asp:TableCell>
+    <asp:TableCell runat="server">Monday</asp:TableCell>
+    <asp:TableCell runat="server">Morning</asp:TableCell>
+    <asp:TableCell runat="server">350</asp:TableCell>
+</asp:TableRow>
             </asp:Table>
         </div>
 

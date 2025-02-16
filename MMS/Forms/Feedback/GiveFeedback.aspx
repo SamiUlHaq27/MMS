@@ -6,6 +6,10 @@
             background: url("../Images/healthy_food.jpg");
             background-size: cover;
         }
+                .feedback-link{
+            
+    border: 1px solid var(--secondary-color);
+}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
