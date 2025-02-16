@@ -14,9 +14,9 @@
         <header>
             <div class="title-bar">
                 <div>
-                    
+
                     <asp:Image ID="Image1" runat="server" Height="34px" ImageUrl="~/Forms/Images/restaurant.png" Width="39px" />
-                    
+
                     <asp:HyperLink ID="HyperLink1" runat="server" CssClass="logo-text">Mess Attendance</asp:HyperLink>
                 </div>
                 <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Forms/Images/settings.png" Height="31px" Width="31px" />
@@ -48,25 +48,29 @@
             </asp:ContentPlaceHolder>
         </div>
 
-         <footer>
-             <div class="footer-content">
-                 <div class="logo-div">
-                    
+        <footer>
+            <div class="footer-content">
+                <div class="logo-div">
+
                     <asp:Image ID="Image6" runat="server" Height="80px" ImageUrl="~/Forms/Images/restaurant.png" Width="88px" />
-                    
-                     <asp:HyperLink ID="HyperLink6" runat="server">Mess Attendance</asp:HyperLink>
-                 </div>
-                 <div class="footer-pages">
-                     <ul>
-                         <li><asp:HyperLink ID="HyperLink7" runat="server">Menu</asp:HyperLink></li>
-                         <li><asp:HyperLink ID="HyperLink8" runat="server">Attendance</asp:HyperLink></li>
-                         <li><asp:HyperLink ID="HyperLink9" runat="server">Bills</asp:HyperLink></li>
-                         <li><asp:HyperLink ID="HyperLink10" runat="server">Feedback</asp:HyperLink></li>
-                     </ul>
-                 </div>
-             </div>
-             <div class="copyright-text">Copyright @ SAD Project</div>
-         </footer>
+
+                    <asp:HyperLink ID="HyperLink6" runat="server">Mess Attendance</asp:HyperLink>
+                </div>
+                <div class="footer-pages">
+                    <ul>
+                        <li>
+                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Forms/Images/restaurant-menu2.png" /><asp:HyperLink ID="HyperLink7" runat="server">Menu</asp:HyperLink></li>
+                        <li>
+                            <asp:Image ID="Image8" runat="server" ImageUrl="~/Forms/Images/attendance2.png" /><asp:HyperLink ID="HyperLink8" runat="server">Attendance</asp:HyperLink></li>
+                        <li>
+                            <asp:Image ID="Image9" runat="server" ImageUrl="~/Forms/Images/bills2.png" /><asp:HyperLink ID="HyperLink9" runat="server">Bills</asp:HyperLink></li>
+                        <li>
+                            <asp:Image ID="Image10" runat="server" ImageUrl="~/Forms/Images/feedback2.png" /><asp:HyperLink ID="HyperLink10" runat="server">Feedback</asp:HyperLink></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-text">Copyright @ SAD Project</div>
+        </footer>
     </form>
 </body>
 </html>

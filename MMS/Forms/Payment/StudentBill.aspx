@@ -5,6 +5,10 @@
             background: url("../Images/coin_stack.jpg");
             background-size: cover;
         }
+                .payment-link{
+            
+    border: 1px solid var(--secondary-color);
+}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
