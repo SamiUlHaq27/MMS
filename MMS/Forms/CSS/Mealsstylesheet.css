@@ -13,43 +13,41 @@
     background-color: #3d3c3ce0;
     color: var(--secondary-color);
     border-radius: 8px;
-    /*   align-items:center;*/
+   
 }
 
-    .controlsmeal input {
-        /*    border: 2px solid black;*/
-        margin: 3px;
-        border-radius: 5px;
-        padding: 5px;
-        border: none;
-        height: 20px;
-        font-size: large;
-    }
+.controlsmeal input {
+    margin: 3px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    height: 20px;
+    font-size: large;
+}
 
-        .controlsmeal input:focus-visible {
-            outline-color: var(--primary-color);
-        }
+.controlsmeal input:focus-visible {
+    outline-color: var(--primary-color);
+}
 
 .submit {
     margin: auto;
     color: var(--primary-color);
     font-weight: bold;
     padding: 10px;
-    input
+    input {
+        font-size: large;
+        height: auto;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid var(--primary-color);
+    }
 
-{
-    font-size: large;
-    height: auto;
-    padding: 10px;
-    border-radius: 20px;
-    border: 2px solid var(--primary-color);
-}
 
-input:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-}
+    input:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
+    }
 
 }
 
@@ -66,6 +64,7 @@ input:hover {
     border-radius: 5px;
     padding: 5px;
 }
-.controlsmeal table{
-    background-color:var(--primary-color);
+
+.controlsmeal table {
+    background-color: var(--primary-color);
 }
