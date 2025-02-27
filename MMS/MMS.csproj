@@ -96,6 +96,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\mms_db.mdf" />
+    <Content Include="App_Data\mms_db_log.ldf">
+      <DependentUpon>mms_db.mdf</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Forms\Attendance\MarkAttendance.aspx" />
     <Content Include="Forms\Attendance\ViewAttendance.aspx" />
@@ -236,9 +240,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Forms\Generics\Student.Master" />
     <Content Include="Forms\Generics\Staff.Master" />
