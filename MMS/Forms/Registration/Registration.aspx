@@ -22,22 +22,22 @@
 
             <asp:Label ID="Label3" runat="server" Text="Name"></asp:Label>
 
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox ID="name_fld" runat="server"></asp:TextBox>
 
             <asp:Label ID="Label4" runat="server" Text="Roll no:"></asp:Label>
 
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <asp:TextBox ID="roll_no_fld" runat="server"></asp:TextBox>
 
             <asp:Label ID="Label5" runat="server" Text="Password"></asp:Label>
 
-            <input id="Password1" type="password" />
+            <asp:TextBox ID="password_fld" runat="server"></asp:TextBox>
 
             <asp:Label ID="Label6" runat="server" Text="Confirm Password"></asp:Label>
 
-            <input id="Password2" type="password" />
+            <asp:TextBox ID="conf_pass_fld" runat="server"></asp:TextBox>
 
             <div class="button2">
-            <asp:Button ID="Button2" runat="server" Text="Register" />
+            <asp:Button ID="register_btn" runat="server" Text="Register" OnClick="register_btn_clicked" />
             </div>
 
             <asp:LinkButton ID="LinkButton2" runat="server">Click here to login</asp:LinkButton>

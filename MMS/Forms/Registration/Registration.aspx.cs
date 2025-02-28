@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +13,22 @@ namespace MMS.Forms.Registration
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void register_btn_clicked(object sender, EventArgs e)
+        {
+            string query = "INSERT INTO [user] (user_id, name, role, password) VALUES (@user_id, @name, 'student', @password)";
+            SqlCommand cmd = new SqlCommand(query);
+            cmd.Parameters.AddWithValue("@user_id", roll_no_fld.Text);
+            cmd.Parameters.AddWithValue("@name", name_fld.Text);
+            cmd.Parameters.AddWithValue("@password", password_fld.Text);
+
+            using(SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Sami\\source\\repos\\SamiUlHaq27\\MMS\\MMS\\App_Data\\mms_db.mdf;Integrated Security=True"))
+            {
+                cmd.Connection = con;
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }

@@ -33,13 +33,13 @@ namespace MMS.Forms.Registration
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// TextBox2 control.
+        /// name_fld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox name_fld;
 
         /// <summary>
         /// Label4 control.
@@ -51,13 +51,13 @@ namespace MMS.Forms.Registration
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// TextBox3 control.
+        /// roll_no_fld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox roll_no_fld;
 
         /// <summary>
         /// Label5 control.
@@ -69,6 +69,15 @@ namespace MMS.Forms.Registration
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
+        /// password_fld control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox password_fld;
+
+        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
@@ -78,13 +87,22 @@ namespace MMS.Forms.Registration
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// Button2 control.
+        /// conf_pass_fld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.TextBox conf_pass_fld;
+
+        /// <summary>
+        /// register_btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button register_btn;
 
         /// <summary>
         /// LinkButton2 control.
