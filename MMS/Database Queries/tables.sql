@@ -1,9 +1,8 @@
-﻿CREATE TABLE [attendance] (
-    [Id]    INT       IDENTITY (1, 1) NOT NULL,
-    [date]  DATETIME  NOT NULL,
-    [time]  NCHAR (1) NOT NULL,
-    [meal]  INT       NOT NULL,
-    [price] INT       NOT NULL,
+﻿CREATE TABLE [dbo].[attendance] (
+    [Id]   INT       IDENTITY (1, 1) NOT NULL,
+    [date] DATE      NOT NULL,
+    [time] NCHAR (1) NOT NULL,
+    [meal] INT       NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
