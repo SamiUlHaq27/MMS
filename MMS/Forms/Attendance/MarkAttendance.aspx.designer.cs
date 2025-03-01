@@ -69,12 +69,21 @@ namespace MMS.Forms.Attendance
         protected global::System.Web.UI.WebControls.Table Table1;
 
         /// <summary>
-        /// save_btn control.
+        /// roll_no_fld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button save_btn;
+        protected global::System.Web.UI.WebControls.TextBox roll_no_fld;
+
+        /// <summary>
+        /// toggle_btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button toggle_btn;
     }
 }
