@@ -96,10 +96,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\mms_db.mdf" />
-    <Content Include="App_Data\mms_db_log.ldf">
-      <DependentUpon>mms_db.mdf</DependentUpon>
-    </Content>
     <Content Include="Database Queries\tables.sql" />
     <Content Include="favicon.ico" />
     <Content Include="Forms\Attendance\MarkAttendance.aspx" />

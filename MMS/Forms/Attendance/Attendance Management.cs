@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -89,19 +90,19 @@ namespace MMS.Forms.Attendance
 			ArrayList att = this.get_attendance_for(date, time);
 			if(att.Count == 0) { 
 				string[] date_d = date.Split('-');
-				DateTime d = new DateTime(int.Parse(date_d[0]), int.Parse(date_d[2]), int.Parse(date_d[1]));
-                string day = d.DayOfWeek.ToString().Substring(0,3);
+				DateTime d = new DateTime(int.Parse(date_d[0]), int.Parse(date_d[1]), int.Parse(date_d[2]));
+				string day = d.DayOfWeek.ToString().Substring(0, 3);
 				ArrayList ml = this.get_meal(day, time);
+				//if(ml.Count > 0)
+				//{
+					string query = "INSERT INTO [attendance] (date, time, meal) VALUES ('"+d.ToString("MM-dd-yyyy")+"', '"+time+"', " + ml[0] +");";
+					this.cmd.CommandText = query;
+					this.cmd.Connection.Open();
+					this.cmd.ExecuteNonQuery();
+					this.cmd.Connection.Close();
+				//}
 
-				string query = "INSERT INTO [attendance] (date, time, meal) VALUES ('"+d.ToString("MM-dd-yyyy")+"', '"+time+"', " + ml[0] +");";
-				this.cmd.CommandText = query;
-				this.cmd.Connection.Open();
-
-				this.cmd.ExecuteNonQuery();
-
-				this.cmd.Connection.Close();
-
-				//att = this.get_attendance_for(date, time);
+				att = this.get_attendance_for(date, time);
 			}
 
 			return att;
@@ -128,5 +129,31 @@ namespace MMS.Forms.Attendance
 			return ml;
 		}
 
+		public void save_attendee(string attendance_id, string attendee)
+		{
+   //         for (int i = 0; i < attendees.Count; i++)
+			//{
+				string query = "INSERT INTO [dbo].[jnc_std_att] (attendance_id, user_id) VALUES ('" + attendance_id + "','" + attendee +"')";
+				this.cmd.CommandText = query;
+				this.cmd.Connection.Open();
+				this.cmd.ExecuteNonQuery();
+				this.cmd.Connection.Close();
+			//}
+		}
+
+		public void remove_attendance(string attendance_id, ArrayList students)
+		{
+			string values = "(";
+            for (int i = 0; i < students.Count; i++)
+            {
+                values += students[i].ToString() + ",";
+            }
+			values += "\b)";
+            string query = "DELETE FROM [jnc_std_att] WHERE attendance_id = "+attendance_id+" AND user_id IN "+values;
+            this.cmd.CommandText = query;
+            this.cmd.Connection.Open();
+            this.cmd.ExecuteNonQuery();
+            this.cmd.Connection.Close();
+        }
     }
 }
