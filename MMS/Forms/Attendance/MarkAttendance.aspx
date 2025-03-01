@@ -36,7 +36,7 @@
             </asp:Table>
         </div>
         <div class="controls">
-            <asp:Button ID="save_btn" runat="server" Text="Save" />
+            <asp:Button ID="save_btn" runat="server" Text="Save" OnClick="save_btn_Click" />
         </div>
     </div>
 </asp:Content>

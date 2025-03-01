@@ -22,12 +22,17 @@ namespace MMS.Forms.Attendance
             }
         }
 
+        private string get_formated_date()
+        {
+            string date = date_fld.Text; // is yyyy-MM-dd
+            string[] date_d = date.Split('-');
+            return date_d[0] + '-' + date_d[2] + '-' + date_d[1];
+        }
+
         private void show_table_data()
         {
             Table1.Rows.Clear();
-            string date = date_fld.Text; // is yyyy-MM-dd
-            string[] date_d = date.Split('-');
-            ArrayList attendance = this.db_service.get_attendance_for(date_d[0] + '-' + date_d[2] + '-' + date_d[1], me_rl.SelectedValue);
+            ArrayList attendance = this.db_service.get_attendance_for(this.get_formated_date(), me_rl.SelectedValue);
             ArrayList attendance_status = new ArrayList();
             if (attendance.Count > 0)
             {
@@ -67,6 +72,12 @@ namespace MMS.Forms.Attendance
         {
             search_fld.Text = date_fld.Text;
             this.show_table_data();
+        }
+
+        protected void save_btn_Click(object sender, EventArgs e)
+        {
+            ArrayList att = this.db_service.save_attendance(get_formated_date(), me_rl.SelectedValue);
+            //search_fld.Text = att[0].ToString();
         }
     }
 }

@@ -17,6 +17,7 @@ namespace MMS.Forms.Attendance
 			this.cmd.Connection = this.con;
 		}
 		
+		// Show attendance for mark attendance
 		public ArrayList get_users_for_attendance()
 		{
 			string query = "SELECT id, user_id, name FROM [user];";
@@ -79,5 +80,53 @@ namespace MMS.Forms.Attendance
 			this.cmd.Connection.Close();
 			return attendees;
 		}
-	}
+
+		// Mark attendance
+
+		public ArrayList save_attendance(string date, string time)
+		{
+			// date should be yyyy-dd-MM
+			ArrayList att = this.get_attendance_for(date, time);
+			if(att.Count == 0) { 
+				string[] date_d = date.Split('-');
+				DateTime d = new DateTime(int.Parse(date_d[0]), int.Parse(date_d[2]), int.Parse(date_d[1]));
+                string day = d.DayOfWeek.ToString().Substring(0,3);
+				ArrayList ml = this.get_meal(day, time);
+
+				string query = "INSERT INTO [attendance] (date, time, meal) VALUES ('"+d.ToString("MM-dd-yyyy")+"', '"+time+"', " + ml[0] +");";
+				this.cmd.CommandText = query;
+				this.cmd.Connection.Open();
+
+				this.cmd.ExecuteNonQuery();
+
+				this.cmd.Connection.Close();
+
+				//att = this.get_attendance_for(date, time);
+			}
+
+			return att;
+        }
+
+		public ArrayList get_meal(string day, string time)
+		{
+			string query = "SELECT * FROM [meal] WHERE day = '"+day+"' AND time = '"+time+"' AND is_deleted = 'N';";
+			this.cmd.CommandText = query;
+			this.cmd.Connection.Open();
+
+			SqlDataReader rdr = this.cmd.ExecuteReader();
+			ArrayList ml = new ArrayList();
+			if (rdr.Read())
+			{
+				for(int i=0; i<rdr.FieldCount; i++)
+				{
+					ml.Add(rdr[i].ToString());
+				}
+			}
+
+			rdr.Close();
+			this.cmd.Connection.Close();
+			return ml;
+		}
+
+    }
 }
