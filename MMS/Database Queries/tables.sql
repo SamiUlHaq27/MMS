@@ -1,9 +1,8 @@
 ﻿CREATE TABLE [attendance] (
     [Id]    INT       IDENTITY (1, 1) NOT NULL,
-    [date]  DATETIME  NOT NULL,
+    [date]  DATE  NOT NULL,
     [time]  NCHAR (1) NOT NULL,
     [meal]  INT       NOT NULL,
-    [price] INT       NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
@@ -29,6 +28,7 @@ CREATE TABLE [meal] (
     [time]  NCHAR (1)     NOT NULL,
     [day]   NCHAR (3)     NOT NULL,
     [price] INT           NOT NULL,
+    [is_deleted] NCHAR(1) NOT NULL DEFAULT 'N', 
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 

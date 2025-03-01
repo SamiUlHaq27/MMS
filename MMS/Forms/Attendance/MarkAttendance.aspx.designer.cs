@@ -15,31 +15,49 @@ namespace MMS.Forms.Attendance
     {
 
         /// <summary>
-        /// TextBox1 control.
+        /// date_fld control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox date_fld;
 
         /// <summary>
-        /// RadioButtonList1 control.
+        /// fetch_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+        protected global::System.Web.UI.WebControls.Button fetch_btn;
 
         /// <summary>
-        /// TextBox2 control.
+        /// me_rl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.RadioButtonList me_rl;
+
+        /// <summary>
+        /// search_fld control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox search_fld;
+
+        /// <summary>
+        /// search_btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button search_btn;
 
         /// <summary>
         /// Table1 control.
@@ -51,12 +69,12 @@ namespace MMS.Forms.Attendance
         protected global::System.Web.UI.WebControls.Table Table1;
 
         /// <summary>
-        /// CheckBox1 control.
+        /// save_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.Button save_btn;
     }
 }

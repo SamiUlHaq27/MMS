@@ -138,6 +138,7 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Attendance\Attendance Management.cs" />
     <Compile Include="Forms\Attendance\MarkAttendance.aspx.cs">
       <DependentUpon>MarkAttendance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
