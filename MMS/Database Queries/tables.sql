@@ -1,10 +1,13 @@
-﻿CREATE TABLE [attendance] (
-    [Id]    INT       IDENTITY (1, 1) NOT NULL,
-    [date]  DATE  NOT NULL,
-    [time]  NCHAR (1) NOT NULL,
-    [meal]  INT       NOT NULL,
+﻿CREATE TABLE [dbo].[attendance] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    [date]      DATE          NOT NULL,
+    [time]      NCHAR (1)     NOT NULL,
+    [meal_name] VARCHAR(50)           NOT NULL,
+    [user_id]   NVARCHAR (50) NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
+
+
 
 CREATE TABLE [feedback] (
     [Id]      INT        IDENTITY (1, 1) NOT NULL,
@@ -12,13 +15,6 @@ CREATE TABLE [feedback] (
     [ratings] FLOAT (53) NOT NULL,
     [user]    INT        NOT NULL,
     [meal]    INT        NOT NULL,
-    PRIMARY KEY CLUSTERED ([Id] ASC)
-);
-
-CREATE TABLE [jnc_std_att] (
-    [Id]            INT IDENTITY (1, 1) NOT NULL,
-    [attendance_id] INT NOT NULL,
-    [user_id]       INT NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 

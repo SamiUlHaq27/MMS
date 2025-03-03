@@ -2,78 +2,57 @@
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Collections;
+using System.Data.SqlClient;
 
 
 namespace MMS.Forms.Attendance
 {
     public partial class MarkAttendance : System.Web.UI.Page
     {
-        AttendanceDatabase db_service = new AttendanceDatabase();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 date_fld.Text = DateTime.Now.ToString("yyyy-MM-dd");
-                this.show_table_data();
             }
         }
 
-        private void show_table_data()
+        protected void save_btn_Click(object sender, EventArgs e)
         {
-            ArrayList attendance = this.db_service.get_attendance_for(date_fld.Text, me_rl.SelectedValue);
-            ArrayList attendance_status = new ArrayList();
-            if (attendance.Count > 0)
+            using (SqlConnection con = new SqlConnection(Connection_String.connection_string))
             {
-                attendance_status = this.db_service.get_attendees_for(attendance[0].ToString());
-            }
-            ArrayList users = this.db_service.get_users_for_attendance();
+                SqlCommand cmd = new SqlCommand("INSERT INTO [attendance] (date, time, meal_name, user_id) VALUES (@date1, @time1, @meal_name1, @user_id1)");
+                cmd.Parameters.AddWithValue("@date1", date_fld.Text);
+                cmd.Parameters.AddWithValue("@time1", me_rl.SelectedValue);
+                cmd.Parameters.AddWithValue("@meal_name1", meals_list.SelectedItem.Text);
+                cmd.Parameters.AddWithValue("@user_id1", roll_no_fld.Text);
+                cmd.Connection = con;
+                con.Open();
 
-            for (int i=0; i<users.Count; i++)
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        protected void find_btn_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(Connection_String.connection_string))
             {
-                ArrayList user = (ArrayList) users[i];
-                TableRow tbl_row = new TableRow();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM [user] WHERE user_id = '" + find_fld.Text + "';");
+                cmd.Connection = con;
+                con.Open();
 
-                for(int j=1; j<user.Count; j++)
+                SqlDataReader rdr = cmd.ExecuteReader();
+                if (rdr.Read())
                 {
-                    TableCell cell = new TableCell();
-                    cell.Controls.Add(new LiteralControl((string) user[j]));
-                    tbl_row.Cells.Add(cell);
+                    name_lbl.Text = rdr[2].ToString();
+                    roll_no_fld.Text = rdr[1].ToString();
                 }
-                CheckBox cbx = new CheckBox();
-                cbx.Enabled = false;
-                if (attendance_status.Contains(user[0]))
+                else
                 {
-                    cbx.Checked = true;
+                    name_lbl.Text = "User not found";
+                    roll_no_fld.Text = "";
                 }
-                TableCell cell2 = new TableCell();
-                cell2.Controls.Add(cbx);
-                tbl_row.Cells.Add(cell2);
-
-                Table1.Rows.Add(tbl_row);
             }
-
-        }
-
-
-        protected void fetch_btn_Click(object sender, EventArgs e)
-        {
-            this.show_table_data();
-        }
-
-        protected void toggle_btn_Click(object sender, EventArgs e)
-        {
-            //ArrayList std = this.db_service.get_student(roll_no_fld.Text);
-            //ArrayList att = this.db_service.get_attendance_for(date_fld.Text, me_rl.SelectedValue);
-            //ArrayList pres = this.db_service.get_attendees_for(att[0].ToString());
-
-            //if (pres.Contains(std[0].ToString()))
-            //{
-                
-            //} else
-            //{
-                this.db_service.save_attendee("1", "5");
-            //}
-            this.show_table_data();
         }
     }
 }

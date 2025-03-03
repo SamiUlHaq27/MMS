@@ -161,8 +161,42 @@ table thead {
     color: var(--secondary-color);
     font-weight: bold;
 }
+/*---------------------------------- Mark Attendance ------------------------------*/
+
+.mark-attendance {
+    display: flex;
+    justify-content: space-around;
+}
+
+.attendance-left {
+    text-align: center;
+    width: 50%;
+    margin: 20px 40px;
+}
+
+.attendance-right {
+    text-align: center;
+    margin: 20px 40px;
+}
+
+.mark-attendance .data{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.mark-attendance .user-info{
+    display: flex;
+    column-gap: 10px;
+    margin: 10px 0px;
+}
+
+.mark-attendance button{
+    border: 1px solid brown;
+}
 /* ---------------------------------- View Feedabacks ------------------------------------- */
-.feedbacks{
+.feedbacks {
     display: flex;
     justify-content: center;
 }
